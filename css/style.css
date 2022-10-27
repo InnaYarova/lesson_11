@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+/*Обнулення (reset)*/
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a {
+	color: inherit;
+}
+a:link,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+img{
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+}
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+/*Стилізація*/
+[class*="container"]{
+	max-width: 750px;
+	margin: 0 auto;
+}
+
+.wrapper{
+	/*overflow: hidden;*/
+	position: relative;
+	min-height: 100%;
+}
+.title{
+	margin-bottom: 10px;
+	font-size: 30px;
+	text-align: center;
+	color: red;
+	font-weight: 700;
+	text-shadow: 3px 3px 7px black;
+	}
+.car__image{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.car{
+position: relative;
+width: 350px;
+height: 580px;
+margin-bottom: 20px;
+}
+[class*="part"]{
+	margin: 40px 0 0 20px;
+}
+	.car__part-1 {
+		position: absolute;
+		top: 4px;
+		left: 100px;
+	}
+
+	.car__part-2 {
+		position: absolute;
+		top: 42px;
+		left: 65px; 
+		z-index: 1;
+		opacity: 0.6;
+	}
+
+	.car__part-3 {
+		position: absolute;
+		top: 98px;
+		left: 20px; 
+		z-index: 2;
+	}
+
+	.car__part-4 {
+		position: absolute;
+		top: 128px;
+		left: 9.5px; 
+	}
+
+	.car__part-5 {
+		position: absolute;
+		top: 146px;
+		left: 15px;
+	}
+
+	.car__part-6 {
+		position: absolute;
+		top: 141.5px;
+		left: 114.5px;
+	}
+
+	.car__part-7 {
+		position: absolute;
+		top: 166px;
+		left: 0px;
+	}
+
+	.car__part-8 {
+		position: absolute;
+		top: 169px;
+		left: 3px;
+	}
+
+	.car__part-9 {
+		position: absolute;
+		top: 53px;
+		left: 188px;
+	}
+
+	.car__part-10 {
+		position: absolute;
+		top: 71px;
+		left: 156px;
+		z-index: 3;
+	}
+
+	.car__part-11 {
+		position: absolute;
+		top: 74px;
+		left: 224px;
+	}
+
+	.car__part-12 {
+		position: absolute;
+		top: 103px;
+		left: 217px;
+	}
+
+	.car__part-13 {
+		position: absolute;
+		top: 80px;
+		left: 40px;
+	}
+
+	.car__part-14 {
+		position: absolute;
+		top: 164px;
+		left: 18px;
+	}
+
+	.car__part-15 {
+		position: absolute;
+		top: 182px;
+		left: 164px;
+	}
+
+	.car__part-16 {
+		position: absolute;
+		top: 223px;
+		left: 139px;
+	}
+
+	.car__part-17 {
+		position: absolute;
+		top: 167px;
+		left: 248px;
+	}
+	.car__tree{
+		position: absolute;
+		top: 1px;
+	}
+	.car__toy img{
+		width: 40px;
+	}
+	.car__toy{
+		position: relative;
+		left: 172px;
+		top: 112px;
+	}
+	.car__fire img{
+		height: 198px;
+	}
+	.car__fire{
+		position: absolute;
+		left: 560px;
+		margin-top: 25px;
+	}
+	.car__sign img{
+			height: 110px;
+	}
+	.car__sign{
+		position: absolute;
+		top: 150px;
+		left: 360px;
+	}
+	.car__flag img{
+		height: 10px;
+	}
+	.car__flag{
+		position: absolute;
+		top: 226px;
+		left: 173px;
+		z-index: 4;
+	}
+
+/*EXPERIMENTS*/
+.experiments{
+font-size: 25px;
+
+}
+.experiments__container{
+
+}
+.experiments__menu{
+background-color: yellow;
+border-radius: 15px;
+position: sticky;
+top: 0px;
+z-index: 100;
+}
+.menu__item{
+position: relative;
+display: inline-block;
+margin-left: 35px;
+font-weight: 700;
+text-shadow: 3px 4px 5px grey;
+}
+.menu__item:not(:last-child){
+	margin-bottom: 15px;
+	}
+.menu__item:hover .sub-menu{
+	opacity: 1;
+	visibility: visible;
+	top: 100%;
+}
+.menu__link{
+color:blue;
+display: inline-block;
+padding: 5px 0px;
+}
+.sub-menu{
+	background-color: aquamarine;
+	padding: 10px;
+	position: absolute;
+	min-width: 200px;
+	top: 130%;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+}
+.menu__sub-menu sub-menu{
+
+}
+.sub-menu__item:not(:last-child){
+margin-bottom: 10px;
+}
+.sub-menu__link{
+color: blueviolet;
+}
+.experiments__biography {
+	padding-top: 50px;
+}
+.experiments__biography p{
+	text-indent: 30px;
+}
+.experiments__biography span{
+font-weight: 700;
+text-transform: uppercase;
+}
+.experiments__biography--epitaph{
+	text-align: center;
+	font-style: italic;
+}
+.experiments__facts{
+	padding-top: 50px;
+}
+.experiments__facts span{
+font-weight: 700;
+}
+.experiments__facts-title{
+color: rgb(166, 29, 29);
+text-align: center;
+font-weight: 700;
+}
+.experiments__foto{
+
+}
+.experiments__sonnets{
+	position: relative;
+	padding-top: 50px;
+}
+.experiments__foto img{
+	width: 20%;
+	position: relative;
+	left: 0px;
+	top: 20px;
+}
+.experiments__sonnets div{
+	text-align: center;
+	color: rgb(99, 71, 3);
+	font-style: italic;
+	font-weight: 700;
+	padding-top: 50px;
+}
+
+.experiments__sonnets--twentyseven{
+margin-top: 50px;
+}
+.experiments__sonnets--forty{
+
+}
+
